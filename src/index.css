@@ -91,7 +91,12 @@ body {
 }
 
 /* Typography */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   font-weight: var(--font-bold);
   line-height: 1.1;
@@ -258,6 +263,7 @@ a:hover {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -265,18 +271,24 @@ a:hover {
 }
 
 @keyframes float {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateY(-20px);
   }
 }
 
 @keyframes pulse {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 1;
   }
+
   50% {
     opacity: 0.5;
   }
@@ -848,7 +860,7 @@ html {
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2.5rem;
 }
 
@@ -959,7 +971,7 @@ html {
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 3rem;
 }
 
@@ -1108,6 +1120,7 @@ html {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-50%);
   }
@@ -1555,6 +1568,7 @@ html {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -1577,6 +1591,7 @@ html {
     transform: scale(0.9) translateY(20px);
     opacity: 0;
   }
+
   to {
     transform: scale(1) translateY(0);
     opacity: 1;
