@@ -85,7 +85,7 @@ const Testimonials: React.FC = () => {
           >
             CLIENT TESTIMONIALS
           </motion.h2>
-          
+
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -93,7 +93,7 @@ const Testimonials: React.FC = () => {
             viewport={{ once: true }}
             className="testimonials-subtitle"
           >
-            Don't just take my word for it. Here's what my clients have to say 
+            Don't just take my word for it. Here's what my clients have to say
             about working with me and the results we've achieved together.
           </motion.p>
         </motion.div>
@@ -165,7 +165,7 @@ const Testimonials: React.FC = () => {
             ))}
 
             {/* Duplicate set for seamless scrolling */}
-            {testimonials.map((testimonial, index) => (
+            {testimonials.map((testimonial) => (
               <div
                 key={`second-${testimonial.author}`}
                 className="testimonial-scroll-card"

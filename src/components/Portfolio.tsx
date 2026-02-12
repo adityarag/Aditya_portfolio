@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
-import { ExternalLink, Play, X } from 'lucide-react'
+import { Play, X } from 'lucide-react'
 
 // VideoPlayer component to handle both local videos and YouTube fallbacks
 const VideoPlayer: React.FC<{
@@ -220,7 +220,7 @@ const Portfolio: React.FC = () => {
           >
             MY PORTFOLIO
           </motion.h2>
-          
+
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -228,7 +228,7 @@ const Portfolio: React.FC = () => {
             viewport={{ once: true }}
             className="portfolio-subtitle"
           >
-            A showcase of my recent work spanning 3D design, video production, 
+            A showcase of my recent work spanning 3D design, video production,
             and creative storytelling across various industries and mediums.
           </motion.p>
         </motion.div>
@@ -284,7 +284,7 @@ const Portfolio: React.FC = () => {
                     backdropFilter: 'blur(5px)',
                     opacity: '0.5'
                   }}
-                  className="play-button-overlay"
+                    className="play-button-overlay"
                   >
                     <Play size={32} />
                   </div>
@@ -327,11 +327,11 @@ const Portfolio: React.FC = () => {
                   )}
                 </div>
               </div>
-              
+
               <div className="portfolio-content">
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
-                
+
                 <div className="portfolio-tags">
                   {project.tags.map((tag) => (
                     <span key={tag} className="portfolio-tag">{tag}</span>
