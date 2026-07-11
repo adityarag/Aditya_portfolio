@@ -1,0 +1,348 @@
+/* ========================================
+   COMPREHENSIVE MOBILE OPTIMIZATIONS
+   ======================================== */
+
+/* Mobile-specific improvements - Add to end of index.css */
+
+/* Hero Section Mobile Optimizations */
+@media (max-width: 640px) {
+    .hero-section {
+        padding: 6rem 1rem 2rem 1rem;
+        min-height: auto;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-button-primary,
+    .hero-button-secondary {
+        width: 100%;
+        justify-content: center;
+        padding: 1.25rem 2rem;
+        font-size: 1rem;
+    }
+
+    .hero-3d-container {
+        height: 300px;
+        margin-top: 2rem;
+    }
+}
+
+/* Navigation Mobile Optimizations */
+@media (max-width: 768px) {
+    .modern-nav {
+        padding: 0;
+    }
+
+    .nav-container {
+        padding: 0.75rem 1rem;
+    }
+
+    .nav-logo {
+        font-size: 1.5rem;
+    }
+
+    .nav-cta {
+        padding: 0.5rem 1rem;
+        font-size: 0.75rem;
+    }
+}
+
+/* Services Section Mobile */
+@media (max-width: 640px) {
+    .services-section {
+        padding: 4rem 1rem;
+    }
+
+    .service-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .service-icon {
+        width: 4rem;
+        height: 4rem;
+    }
+}
+
+/* Portfolio Section Mobile */
+@media (max-width: 640px) {
+    .portfolio-section {
+        padding: 4rem 1rem;
+    }
+
+    .portfolio-grid {
+        gap: 2rem;
+    }
+
+    .portfolio-content {
+        padding: 1.5rem;
+    }
+
+    .portfolio-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .portfolio-content p {
+        font-size: 1rem;
+    }
+
+    .portfolio-footer {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .client-showcase {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+}
+
+/* About Section Mobile */
+@media (max-width: 640px) {
+    .about-section {
+        padding: 4rem 1rem;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .stat-item {
+        padding: 1.5rem 1rem;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .stat-label {
+        font-size: 0.875rem;
+    }
+}
+
+/* Contact Section Mobile */
+@media (max-width: 640px) {
+    .modern-contact-section {
+        padding: 4rem 1rem;
+    }
+
+    .contact-header {
+        margin-bottom: 3rem;
+    }
+
+    .modern-form {
+        padding: 2rem 1.5rem;
+    }
+
+    .form-input,
+    .form-textarea {
+        font-size: 1rem;
+        padding: 0.875rem 1.25rem;
+    }
+
+    .form-button {
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .contact-card {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1.25rem;
+    }
+
+    .contact-icon {
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+/* Footer Mobile */
+@media (max-width: 640px) {
+    .footer-section {
+        padding: 4rem 1rem 2rem;
+    }
+
+    .footer-brand {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .footer-logo {
+        margin-right: 0;
+    }
+
+    .footer-shapes {
+        flex-wrap: wrap;
+    }
+}
+
+/* Touch-friendly interactions for mobile */
+@media (hover: none) and (pointer: coarse) {
+
+    /* Remove hover effects on touch devices */
+    .btn:hover,
+    .portfolio-card:hover,
+    .service-card:hover,
+    .contact-card:hover {
+        transform: none;
+    }
+
+    /* Increase tap targets */
+    .btn,
+    .nav-link,
+    .nav-cta,
+    .footer-social-link {
+        min-height: 44px;
+        min-width: 44px;
+    }
+
+    /* Make play buttons more touch-friendly */
+    .play-button-overlay {
+        width: 100px !important;
+        height: 100px !important;
+    }
+}
+
+/* Prevent text from being too small on mobile */
+@media (max-width: 480px) {
+    html {
+        font-size: 16px;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+
+    .section {
+        padding: 3rem 0;
+    }
+
+    /* Ensure readable text sizes */
+    p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    /* Better spacing on very small screens */
+    .btn {
+        padding: 1rem 1.5rem;
+        font-size: 0.875rem;
+    }
+}
+
+/* Landscape mobile optimizations */
+@media (max-width: 896px) and (max-height: 414px) and (orientation: landscape) {
+    .hero-section {
+        min-height: auto;
+        padding: 6rem 2rem 2rem;
+    }
+
+    .hero-3d-container {
+        height: 250px;
+    }
+
+    .hero-container {
+        gap: 2rem;
+    }
+}
+
+/* Video modal mobile improvements */
+@media (max-width: 640px) {
+    .video-modal-overlay {
+        padding: 0.5rem;
+    }
+
+    .video-modal-content {
+        padding: 0.25rem;
+        border-radius: 0.5rem;
+    }
+
+    .video-modal-close {
+        top: 5px;
+        right: 5px;
+        width: 36px;
+        height: 36px;
+    }
+}
+
+/* Testimonials mobile overflow fix */
+@media (max-width: 640px) {
+    .testimonials-section {
+        padding: 4rem 0;
+    }
+
+    .testimonials-header {
+        padding: 0 1rem;
+    }
+
+    .testimonial-scroll-card {
+        min-width: 260px;
+        max-width: 300px;
+        padding: 1.25rem;
+    }
+
+    .testimonials-scroll-track {
+        padding-left: 1rem;
+    }
+}
+
+/* Improve form usability on mobile */
+@media (max-width: 640px) {
+    .form-row {
+        gap: 1rem;
+    }
+
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+
+    .form-label {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Portfolio tags mobile wrap */
+@media (max-width: 640px) {
+    .portfolio-tags {
+        gap: 0.5rem;
+    }
+
+    .portfolio-tag {
+        padding: 0.4rem 0.875rem;
+        font-size: 0.75rem;
+    }
+}
+
+/* Better scroll padding for mobile navigation */
+@media (max-width: 768px) {
+    html {
+        scroll-padding-top: 60px;
+    }
+}
+
+/* Disable animations on mobile for better performance */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
